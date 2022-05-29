@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(218, 227, 255);
+    display: flex;
+    justify-content: center;
+    // align-items: center;
+}
+
+.container {
+    width: 70%;
+    min-height: 70%;
+    // border: 1px solid black;
+}
+
+#app {
+    background-color: white;
+    box-shadow: 0 0 7px 3px #ddd;
+    color: black;
+    padding: 25px 50px;
+    margin-top: 80px;
+    height: fit-content;
+
+
+    h1 {
+        font-size: 1.5rem;
+        font-weight: bold;
+        margin-bottom: 25px;
+    }
+
+    #input-area {
+        width: 100%;
+        position: relative;
+
+        input {
+            width: 80%;
+            padding: 5px 8px;
+
+        }
+
+        button {
+            height: 100%;
+            width: 30px;
+            position: absolute;
+            right: 0;
+            cursor: pointer;
+        }
+    }
+
+    #list-area {
+        // background: red;
+        min-height: 40vh;
+    }
+
+}
+
+.task {
+    position: relative;
+    margin: 10px 0;
+    background-color: #ddd;
+    padding: 7px 10px;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+
+    input {
+        // the checkbox
+        margin-right: 10px;
+    }
+
+    .delete-icon {
+        position: absolute;
+        color: red;
+        right: 5px;
+        margin-left: 10px;
+        cursor: pointer;
+    }
+
+    .edit-icon {
+        color: blue;
+        margin-left: auto;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+    }
+
+    .save-icon {
+        color: green;
+        margin-left: auto;
+        cursor: pointer;
+        position: absolute;
+        right: 30px;
+    }
+
+}
+
+.done {
+    text-decoration: line-through;
+}

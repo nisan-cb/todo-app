@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+section {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #dae3ff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container {
+  width: 70%;
+  min-height: 70%;
+}
+
+#app {
+  background-color: white;
+  -webkit-box-shadow: 0 0 7px 3px #ddd;
+          box-shadow: 0 0 7px 3px #ddd;
+  color: black;
+  padding: 25px 50px;
+  margin-top: 80px;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+#app h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 25px;
+}
+
+#app #input-area {
+  width: 100%;
+  position: relative;
+}
+
+#app #input-area input {
+  width: 80%;
+  padding: 5px 8px;
+}
+
+#app #input-area button {
+  height: 100%;
+  width: 30px;
+  position: absolute;
+  right: 0;
+  cursor: pointer;
+}
+
+#app #list-area {
+  min-height: 40vh;
+}
+
+.task {
+  position: relative;
+  margin: 10px 0;
+  background-color: #ddd;
+  padding: 7px 10px;
+  border-radius: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.task input {
+  margin-right: 10px;
+}
+
+.task .delete-icon {
+  position: absolute;
+  color: red;
+  right: 5px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+.task .edit-icon {
+  color: blue;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
+
+.task .save-icon {
+  color: green;
+  margin-left: auto;
+  cursor: pointer;
+  position: absolute;
+  right: 30px;
+}
+
+.done {
+  text-decoration: line-through;
+}
+/*# sourceMappingURL=style.css.map */
